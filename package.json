@@ -1,0 +1,28 @@
+{
+  "name": "csp-demo",
+  "version": "1.0.0",
+  "description": "CSP-compliant Express app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Caridy Patiño <caridy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "content-security-policy": "^0.2.0",
+    "express": "^4.6.0",
+    "express-handlebars": "^1.0.1",
+    "morgan": "^1.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:caridy/csp.git"
+  },
+  "keywords": [
+    "express",
+    "csp"
+  ]
+}

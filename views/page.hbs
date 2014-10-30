@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSP Demo Page</title>
+</head>
+<body>
+    <h1>Usuarios Registrados</h1>
+
+    <ul>
+        {{#items}}
+        <li>
+           {{{name}}}
+        </li>
+        {{/items}}
+    </ul>
+
+    <form action="/add" method="post">
+        Nombre:
+        <input type="text" name="name" value="">
+        <input type="submit" value="add">
+    </form>
+
+    <p>
+        Código de confirmación: <span id="secret">no disponible</span>
+    </p>
+
+    <script nonce="{{nonce}}">
+    var el = document.getElementById('secret');
+    // analyzing cookies
+    (document.cookie || '').split(';').some(function (value) {
+        var keyValue = (value || '').split('=');
+        if (keyValue[0].trim() === 'secret') {
+            el.innerText = keyValue[1];
+            return true;
+        }
+    });
+    </script>
+</body>
+</html>
