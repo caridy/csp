@@ -1,4 +1,17 @@
-# CSP Demo
+# Content Security Policy Level 2 - Demo
+
+Demo utilizada en la charla de [GSickMinds - Galicia 2014](http://gsickminds.net).
+
+## Enlaces
+
+* Presentación:
+
+    http://www.slideshare.net/caridy/gsickminds-final
+
+* Especificaciones de CSP Level 2.0:
+
+    http://www.w3.org/TR/CSP2/
+
 
 ## Instalación de requisitos
 
