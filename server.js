@@ -65,5 +65,6 @@ router.post('/add', bodyParser.urlencoded({ extended: false }), function (req, r
 });
 
 app.listen(3000, function () {
-    console.log('listening on: %d', 3000);
+    console.log('applicación corriendo en: http://127.0.0.1:%d/secure', 3000);
+    console.log('también puede visitar: http://127.0.0.1:%d/sloppy', 3000);
 });
